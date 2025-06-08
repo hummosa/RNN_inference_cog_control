@@ -1,12 +1,34 @@
-# Comparing RNN Performance with and without MD Input
+# Cognitive Control via Latent Embedding in Recurrent Neural Networks (RNN)
 
 ## Overview
 
-This project aims to investigate the role of Mediodorsal Thalamic Nucleus (MD) representations on the ability of the cortex (modeled as a Recurrent Neural Network, RNN) in generalization to novel situations. The codebase consists of two primary models: one that includes both the cortex and MD and another that only models the cortex (RNN only). Through a comparative study, the project sheds light on the influence of MD representations in the neural modeling context.
+This repository implements preliminary results from our ongoing research project investigating computational mechanisms underlying cognitive control. Specifically, it explores how recurrent neural networks (RNNs) equipped with latent embeddings dynamically allocate cognitive control across multiple timescales, enabling flexible and efficient behavioral adaptation.
+
+The models aim to explain human behavioral performance and neural data (EEG), particularly in tasks involving response conflict, such as the Flanker task.
+
+## Objectives
+
+The models developed demonstrate:
+
+- Cognitive control performance in conflict-based tasks.
+- Dynamic inference and updating of latent embeddings that represent cognitive control signals.
+- Computational predictions of behavioral responses and neural signatures, validated against human EEG and behavioral data.
 
 ## Getting Started
 
-The easiest way to begin is by executing the `run_training_testing_simple_RNN_MD` notebook, which provides a straightforward comparison between training and testing of the two primary models:
+To run a demonstration comparing model performance, use the provided Jupyter notebook:
 
-- Cortex only model (RNN only)
-- Cortex + MD model
+
+run_training_testing_simple_RNN_MD.ipynb
+
+
+This notebook includes comparisons among:
+
+- Basic RNN: A standard recurrent neural network without latent embeddings.
+- RNN with theoretical embeddings: Incorporates predefined latent variables (e.g., conflict conditions).
+- RNN with data-driven embeddings: Learns latent embeddings directly from task data through an inference process.
+
+## Further Information
+
+More details will be published as the project progresses. Stay tuned for updates.
+
